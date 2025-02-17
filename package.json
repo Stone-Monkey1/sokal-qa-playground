@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration=production --base-href '/your-repo-name/'",
-    "postbuild": "mv docs/browser/.nojekyll docs/.nojekyll || touch docs/.nojekyll",
+    "build": "ng build --configuration=production --base-href '/sokal-qa-playground/'",
+    "postbuild": "mv docs/browser/* docs/ && rm -rf docs/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
