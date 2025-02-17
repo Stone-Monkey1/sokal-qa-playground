@@ -21,7 +21,7 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              { "glob": "**/.nojekyll", "input": "src", "output": "/" }
+              { "glob": ".nojekyll", "input": "src", "output": "./" }
             ],
             "styles": ["src/styles.css"],
             "scripts": []
