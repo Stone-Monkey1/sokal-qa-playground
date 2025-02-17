@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration=production --base-href '/sokal-qa-playground/'",
-    "postbuild": "mv docs/browser/.nojekyll docs/.nojekyll || touch docs/.nojekyll",
+    "postbuild": "rm -rf ../docs && mv docs ../docs && mv docs/browser/.nojekyll docs/.nojekyll || touch docs/.nojekyll",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
