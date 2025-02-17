@@ -1,0 +1,17 @@
+.navbar {
+  gap: 20px;
+  padding: 10px;
+  border-bottom: 4px solid black;
+}
+.navbar a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+.navbar a.active {
+  text-decoration: underline;
+}
+.navbar .nav-links {
+    gap: 20px;
+    width: 70%;
+}
