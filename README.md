@@ -5,7 +5,7 @@ How to get the project on your computer:
 1. Open the console in VSCode.
 2. Run "git clone https://github.com/Stone-Monkey1/sokal-qa-playground.git"
 3. Go back into the terminal and navigate into the repository you just cloned by typing "cd sokal-qa-playground"
-4. Now, you need to download the package dependencies.
+4. Now, you need to download the package dependencies. To do this run "npm install"
 5. To run the application type "ng serve" this will run the applcication.
 6. Navigate to http://localhost:4200/ to view the application.
 
@@ -29,10 +29,11 @@ How to add what you made to github:
 
 1. cd back into the main file sokal-qa-playground.
 2. Please make sure you're in the sokal-qa-playground file in the terminal before continuing.
-3. If you're adding new components, or CSS, you should be able to just run "git add ." this will add all changed files to the next commit. If you only want to add certain files, you can run "git add XYZ" "XYZ" the relative path of the file you want added.
-4. Once you've added the files you changed you're ready to commit "git commit -m "Added specials page"".
-5. Before we push we first need to make sure you have the most updated version of the repository, in case someone made an update while you were working on yours. To do that run "git pull origin main --rebase". If no one else has pushed changes, Git will say "Already up to date". If someone has pushed changes, Git will reapply their work on top of the latest commit.
-6. If there are discrepancies github will ask if you want to merge them manually, you can probably do that since the changes SHOULDN'T me many. Since we'll only be in a few files :D :D :D
-7. Once you've made the manual changes you'll need to mark the changes resolved by running "git add src/app/pages/specials.component.html" or whichever file it was that had discrepancies. Then, move on with the rebase "git rebase --continue". Then you'll do the same process for the next file.
-8. Run "git push origin main"
-9. Hopefully it's that smooth
+3. You will need to run "ng build" this compiles all the changes you made into the docs folder, which is the file that is used by github for github pages.
+4. If you're adding new components, or CSS, you should be able to just run "git add ." this will add all changed files to the next commit. If you only want to add certain files, you can run "git add XYZ" "XYZ" the relative path of the file you want added.
+5. Once you've added the files you changed you're ready to commit "git commit -m "Added specials page"".
+6. Before we push we first need to make sure you have the most updated version of the repository, in case someone made an update while you were working on yours. To do that run "git pull origin main --rebase". If no one else has pushed changes, Git will say "Already up to date". If someone has pushed changes, Git will reapply their work on top of the latest commit.
+7. If there are discrepancies github will ask if you want to merge them manually, you can probably do that since the changes SHOULDN'T me many. Since we'll only be in a few files :D :D :D
+8. Once you've made the manual changes you'll need to mark the changes resolved by running "git add src/app/pages/specials.component.html" or whichever file it was that had discrepancies. Then, move on with the rebase "git rebase --continue". Then you'll do the same process for the next file.
+9. Run "git push origin main"
+10. Hopefully it's that smooth
