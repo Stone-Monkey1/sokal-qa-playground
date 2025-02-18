@@ -29,7 +29,7 @@ How to add what you made to github:
 
 1. cd back into the main file sokal-qa-playground.
 2. Please make sure you're in the sokal-qa-playground file in the terminal before continuing.
-3. You will need to run "ng build" this compiles all the changes you made into the docs folder, which is the file that is used by github for github pages.
+3. You will need to run "npm run build" this compiles all the changes you made into the docs folder, which is the file that is used by github for github pages.
 4. If you're adding new components, or CSS, you should be able to just run "git add ." this will add all changed files to the next commit. If you only want to add certain files, you can run "git add XYZ" "XYZ" the relative path of the file you want added.
 5. Once you've added the files you changed you're ready to commit "git commit -m "Added specials page"".
 6. Before we push we first need to make sure you have the most updated version of the repository, in case someone made an update while you were working on yours. To do that run "git pull origin main --rebase". If no one else has pushed changes, Git will say "Already up to date". If someone has pushed changes, Git will reapply their work on top of the latest commit.
