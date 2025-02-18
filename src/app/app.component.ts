@@ -29,9 +29,9 @@ export class AppComponent {
   getTitleFromRoute(url: string): string {
     const titleMap: { [key: string]: string } = {
       '/': `Home - ${DEALER_NAME}`,
-      '/about': `About Us - ${DEALER_NAME}`,
+      '/about': `About Us`,
       '/contact': `Contact Us - ${DEALER_NAME}`,
-      '/products': `Our Products - ${DEALER_NAME}`,
+      '/products': `Our Products`,
     };
 
     return titleMap[url] || DEALER_NAME; // Default title if no match
