@@ -8,6 +8,20 @@ header {
   font-weight: bold;
   text-align: center;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+h4 {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+ul {
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
 /* Reusable CSS */
 .custom-class p,
 .custom-class li {
