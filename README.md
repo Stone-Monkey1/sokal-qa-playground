@@ -8,6 +8,7 @@ How to get the project on your computer:
 4. Now, you need to download the package dependencies. To do this run "chmod +x setup.sh && ./setup.sh"
 5. To run the application type "npx ng serve" this will run the applcication.
 6. Navigate to http://localhost:4200/ to view the application.
+7. You can stop a terminal running a script by pressing ctrl & c at the same time.
 
 Where are things?
 1. Angular projects are very well organized. It's what typically makes Angualr great for large projects, but a bit overkill for smaller projects, like ours :).
