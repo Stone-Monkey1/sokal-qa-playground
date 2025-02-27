@@ -5,8 +5,8 @@ How to get the project on your computer:
 1. Open the console in VSCode.
 2. Run "git clone https://github.com/Stone-Monkey1/sokal-qa-playground.git"
 3. Go back into the terminal and navigate into the repository you just cloned by typing "cd sokal-qa-playground"
-4. Now, you need to download the package dependencies. To do this run "npm install"
-5. To run the application type "ng serve" this will run the applcication.
+4. Now, you need to download the package dependencies. To do this run "chmod +x setup.sh && ./setup.sh"
+5. To run the application type "npx ng serve" this will run the applcication.
 6. Navigate to http://localhost:4200/ to view the application.
 
 Where are things?
