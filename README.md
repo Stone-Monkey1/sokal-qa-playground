@@ -21,7 +21,7 @@ Where are things?
 
 How can I add another page or update CSS?
 1. Open the terminal.
-2. in the terminal type "ng g component componentName" change componentName to the name of the page or component you want.
+2. in the terminal type "npx ng g component componentName" change componentName to the name of the page or component you want.
 3. Currently there is an issue with the generate component command not being updated to the current formatting Angular requires, so you'll need to manually go into the .ts file that was created from the command and add "standalone: true," underneath the selector.
 4. You'll then need to go to app.routes.ts and ensure you're new page is being imported, you can jsut match the formatting of the other imports present in there.
 
