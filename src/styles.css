@@ -8,6 +8,15 @@ header {
   font-weight: bold;
   text-align: center;
 }
+::ng-deep .container[_ngcontent-ng-c4069588201] {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: none;
+}
 img {
   display: block;
   max-width: 100%;
