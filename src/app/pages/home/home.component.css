@@ -104,6 +104,13 @@ h2 {
   background: #ffffff;
   color: #000000;
 }
+.content-container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .quick-links-component .col-md-offset-custom-2 {
     margin-left: 16.6666666667%;
