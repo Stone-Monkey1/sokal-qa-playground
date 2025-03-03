@@ -30,3 +30,83 @@ h2 {
   background: #34495e;
   color: white;
 }
+
+/* Homepage Quick Links Styling STARTS */
+
+.quick-link, 
+.quick-link:hover, 
+.quick-link:active, 
+.quick-link:focus {
+    text-decoration: none;
+    outline: none;
+}
+.quick-link .link-box {
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 460px;
+  background-color: rgba(0, 0, 0, 0.95);
+  background-blend-mode: luminosity;
+}
+.quick-link .link-box:hover {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.quick-link .link-box .box-overlay {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background: transparent linear-gradient(0deg, #C3002f 0%, #0F1F3100 100%) 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  padding: 15px;
+  height: 485px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.quick-link .link-box, 
+.quick-link .link-box .box-overlay {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.quick-link .link-box .box-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.quick-link .quick-link__title {
+  color: #fff;
+}
+#quick-link-01 {
+  background-image: url("https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/413/612/original/2023-nissan-pathfinder-aggressiv_%281%29.png?1679582018");
+}
+#quick-link-02 {
+  background-image: url("https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/154/209/original/pexels-anthony-shkraba-7144198_%281%29.jpg?1632840562");
+}
+#quick-link-03 {
+  background-image: url("https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/399/157/original/shutterstock_1162694572_2x.png?1678311472");
+}
+#quick-link-04 {
+  background-image: url("https://d2v1gjawtegg5z.cloudfront.net/uploads/files/000/020/996/original/service-image-2-compressor.jpg?1541174376");
+}
+.quick-link-col .quick-link__btn {
+  border: none;
+}
+.quick-link-col .quick-link__btn:hover {
+  box-shadow: 0px 0px 10px 15px rgb(255 255 255 / 50%);
+}
+.quick-link .link-box {
+  background-color: #eceded;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quick-links-component .col-md-offset-custom-2 {
+    margin-left: 16.6666666667%;
+  }
+}
+@media (max-width: 991px) {
+  .quick-link .link-box {
+    max-width: 350px;
+  }
+}
