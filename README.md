@@ -1,4 +1,5 @@
 The page: https://stone-monkey1.github.io/sokal-qa-playground/
+
 Welcome to the testing ground for our QA tool. I made this an angular application. It might have been better in the short term to make this a Vue app to match our QA application. However, I think it's important for us to get experience working in different frontend frameworks. Exposure to new things is good, also, all the frontend frameworks are quite similar. The main difference between a Vue project and an Angular project is that Angular uses ts (TypeScript) instead of the js (JavaScript) used in Vue and what we typically use. You'll find that ts does basically everything js does, and then some. It's just a bit more modern, but it should look pretty similar to what you're used to. Additionally, we shoouldn't be needing to use much ts in the application anyway, just as a way to help us tie things together.
 
 How to get the project on your computer:
