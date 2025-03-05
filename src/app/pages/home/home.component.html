@@ -1,17 +1,17 @@
-<header>Welcome to Big Chungus Trucks</header>
+<header>Welcome to {{ DEALER_NAME }}</header>
 
 <div class="container">
   <h1>Huge Trucks, Even Bigger Deals!</h1>
   <p>
-    At Big Chungus Trucks, we don’t just sell truccks—we deliver legendairy dealsz
-    with **massive saveings**.
+    At {{ DEALER_NAME }}, we don’t just sell truccks—we deliver legendairy
+    dealsz with **massive saveings**.
   </p>
 
-  <h2>Why Buy from Big Chungus Trucks?</h2>
+  <h2>Why Buy from {{ DEALER_NAME }}</h2>
   <ul>
     <li>🐰 Gigantic selection of top-tier trucks</li>
     <li>💰 Unbeatable financing options</li>
-    <li>📦 Limited-time **Big Chungus Bonus Bundle**</li>
+    <li>📦 Limited-time **{{ DEALER_NAME }} Bonus Bundle**</li>
   </ul>
 
   <div class="promo">
@@ -22,11 +22,11 @@
 
   <h2>Test Drive Your Future Today!</h2>
   <p>
-    Stop by **Big Chungus Trucks** to experience the best deals in the truck
+    Stop by **{{ DEALER_NAME }}** to experience the best deals in the truck
     world. Our expert team is here to make your dream truck a reality.
   </p>
 
-  <p>**Big trucks. Big savings. Big Chungus.**</p>
+  <p>**Big trucks. Big savings. {{ DEALER_NAME }}.**</p>
 </div>
 
 <!-- Homepage Quick Links Component -->
@@ -39,9 +39,10 @@
       </div>
     </div>
     <div class="row links-row">
-      
       <!-- Quick Link -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-custom-2 col-lg-3 quick-link-col animation-element slide-right">
+      <div
+        class="col-xs-12 col-sm-6 col-md-4 col-md-offset-custom-2 col-lg-3 quick-link-col animation-element slide-right"
+      >
         <a href="/newvehicles" class="quick-link">
           <div class="link-box" id="quick-link-01">
             <div class="box-overlay">
@@ -52,7 +53,9 @@
         </a>
       </div>
       <!-- Quick Link -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 quick-link-col animation-element slide-right reveal2">
+      <div
+        class="col-xs-12 col-sm-6 col-md-4 col-lg-3 quick-link-col animation-element slide-right reveal2"
+      >
         <a href="/the-sansone-jr-advantage" class="quick-link">
           <div class="link-box" id="quick-link-02">
             <div class="box-overlay">
@@ -63,8 +66,14 @@
         </a>
       </div>
       <!-- Quick Link -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-custom-2 col-lg-3 quick-link-col animation-element slide-right reveal3">
-        <a href="https://shopathome.carsaver.com/trade/sell-at-home?dealerId=5240" target="_blank" class="quick-link">
+      <div
+        class="col-xs-12 col-sm-6 col-md-4 col-md-offset-custom-2 col-lg-3 quick-link-col animation-element slide-right reveal3"
+      >
+        <a
+          href="https://shopathome.carsaver.com/trade/sell-at-home?dealerId=5240"
+          target="_blank"
+          class="quick-link"
+        >
           <div class="link-box" id="quick-link-03">
             <div class="box-overlay">
               <h3 class="quick-link__title">Sell or trade your car</h3>
@@ -74,7 +83,9 @@
         </a>
       </div>
       <!-- Quick Link -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 quick-link-col animation-element slide-right reveal4">
+      <div
+        class="col-xs-12 col-sm-6 col-md-4 col-lg-3 quick-link-col animation-element slide-right reveal4"
+      >
         <a href="{SITE_SERVICE_LINK}" class="quick-link">
           <div class="link-box" id="quick-link-04">
             <div class="box-overlay">
@@ -91,99 +102,130 @@
 <!-- Homepage Model Carousel -->
 
 <div class="browse-by-component word-space">
-    <div class="content-container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                <div class="line-divide"></div>
-                <h1 class="grey-text">Find the right Nissan for your life.</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
-                <p class="grey-text">
-                    Big Chungus is here for you. We get that everyone has a unique life
-                    with different needs, so we offer vehicles that match any situation.
-                </p>
-            </div>
-        </div>
+  <div class="content-container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
+        <div class="line-divide"></div>
+        <h1 class="grey-text">Find the right Nissan for your life.</h1>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
+        <p class="grey-text">
+          {{ DEALER_NAME }} is here for you. We get that everyone has a unique
+          life with different needs, so we offer vehicles that match any
+          situation.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- VEHICLE TYPE CONTENT -->
 <div class="vehicle-type-display">
-    <div class="row title-row">
-        <span class="text-center">Shop Our Vehicle Lineup</span>
-    </div>
-    <div class="row vehicle-row text-center">
-        <div class="content-container">
-            <ul class="nav nav-pills text-center" role="tablist">
-                <!-- <li role="popular-tab" class="active"><a href="#popular-tab" aria-controls="popular-tab" role="tab"
+  <div class="row title-row">
+    <span class="text-center">Shop Our Vehicle Lineup</span>
+  </div>
+  <div class="row vehicle-row text-center">
+    <div class="content-container">
+      <ul class="nav nav-pills text-center" role="tablist">
+        <!-- <li role="popular-tab" class="active"><a href="#popular-tab" aria-controls="popular-tab" role="tab"
                             data-toggle="pill">Popular Models</a></li> -->
-                <li role="cars-tab" class="active">
-                    <a href="#cars-tab" aria-controls="cars-tab" role="tab" data-toggle="pill">Cars</a>
-                </li>
-                <li role="trucks-tab">
-                    <a href="#trucks-tab" aria-controls="trucks-tab" role="tab" data-toggle="pill">Trucks</a>
-                </li>
-                <li role="suvs-tab">
-                    <a href="#suvs-tab" aria-controls="suvs-tab" role="tab" data-toggle="pill">Crossovers & SUVs</a>
-                </li>
-                <li role="ev-tab">
-                    <a href="#ev-tab" aria-controls="ev-tab" role="tab" data-toggle="pill">Electric</a>
-                </li>
-                <!-- <li role="vans-tab"><a href="#vans-tab" aria-controls="vans-tab" role="tab"
+        <li role="cars-tab" class="active">
+          <a
+            href="#cars-tab"
+            aria-controls="cars-tab"
+            role="tab"
+            data-toggle="pill"
+            >Cars</a
+          >
+        </li>
+        <li role="trucks-tab">
+          <a
+            href="#trucks-tab"
+            aria-controls="trucks-tab"
+            role="tab"
+            data-toggle="pill"
+            >Trucks</a
+          >
+        </li>
+        <li role="suvs-tab">
+          <a
+            href="#suvs-tab"
+            aria-controls="suvs-tab"
+            role="tab"
+            data-toggle="pill"
+            >Crossovers & SUVs</a
+          >
+        </li>
+        <li role="ev-tab">
+          <a href="#ev-tab" aria-controls="ev-tab" role="tab" data-toggle="pill"
+            >Electric</a
+          >
+        </li>
+        <!-- <li role="vans-tab"><a href="#vans-tab" aria-controls="vans-tab" role="tab"
                               data-toggle="pill">Vans</a></li> -->
-            </ul>
-        </div>
-        <div class="col-xs-12 col-centered">
-            <div class="tab-content">
-                <!-- CARS DESKTOP CONTENT -->
-                <div role="tabpanel" class="tab-pane active fade in" id="cars-tab">
-                    <div class="carousel slide hidden-xs" id="theCarousel0">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Leaf">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Leaf"
-                                        [src]="nissanLeafCarousel" />
-                                        <p><strong>Leaf</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-centered">
+      <div class="tab-content">
+        <!-- CARS DESKTOP CONTENT -->
+        <div role="tabpanel" class="tab-pane active fade in" id="cars-tab">
+          <div class="carousel slide hidden-xs" id="theCarousel0">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Leaf">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Leaf"
+                      [src]="nissanLeafCarousel"
+                    />
+                    <p><strong>Leaf</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Sentra">
-                                        <img class="lazyload vehicle-img img-responsive center-block"
-                                            alt="Nissan Sentra"
-                                            [src]="nissanSentraCarousel" />
-                                        <p><strong>Sentra</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Sentra">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Sentra"
+                      [src]="nissanSentraCarousel"
+                    />
+                    <p><strong>Sentra</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Versa">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Versa"
-                                        [src]="nissanVersaCarousel" />
-                                        <p><strong>Versa</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Versa">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Versa"
+                      [src]="nissanVersaCarousel"
+                    />
+                    <p><strong>Versa</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Altima">
-                                        <img class="lazyload vehicle-img img-responsive center-block"
-                                            alt="Nissan Altima"
-                                            [src]="nissanAltimaCarousel" />
-                                        <p><strong>Altima</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Altima">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Altima"
+                      [src]="nissanAltimaCarousel"
+                    />
+                    <p><strong>Altima</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <!-- <div class="item">
+              <!-- <div class="item">
                     <div class="col-sm-3">
                       <a href="/newvehicles?model=Maxima">
                         <img
@@ -196,17 +238,22 @@
                     </div>
                   </div> -->
 
-                            <div class="item nissan-z">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=
-    Z">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Z"
-                                        [src]="nissanZCarousel" />
-                                        <p><strong>Z</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- <div class="item">
+              <div class="item nissan-z">
+                <div class="col-sm-3">
+                  <a
+                    href="/newvehicles?model=
+    Z"
+                  >
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Z"
+                      [src]="nissanZCarousel"
+                    />
+                    <p><strong>Z</strong></p>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="item">
                     <div class="col-sm-3">
                       <a href="/newvehicles?model=GTR">
                         <img
@@ -218,48 +265,68 @@
                       </a>
                     </div>
                   </div> -->
-                        </div>
-                        <!-- CARS CAROUSEL -->
-                        <a class="left carousel-control" href="#theCarousel0" data-slide="prev"><i
-                                class="glyphicon glyphicon-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#theCarousel0" data-slide="next"><i
-                                class="glyphicon glyphicon-chevron-right"></i></a>
-                    </div>
+            </div>
+            <!-- CARS CAROUSEL -->
+            <a
+              class="left carousel-control"
+              href="#theCarousel0"
+              data-slide="prev"
+              ><i class="glyphicon glyphicon-chevron-left"></i
+            ></a>
+            <a
+              class="right carousel-control"
+              href="#theCarousel0"
+              data-slide="next"
+              ><i class="glyphicon glyphicon-chevron-right"></i
+            ></a>
+          </div>
 
-                    <!-- CARS MOBILE CONTENT -->
-                    <div class="mobile-row visible-xs">
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Leaf">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Leaf"
-                                [src]="nissanLeafCarousel" />
-                                <p><strong>Leaf</strong></p>
-                            </a>
-                        </div>
+          <!-- CARS MOBILE CONTENT -->
+          <div class="mobile-row visible-xs">
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Leaf">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Leaf"
+                  [src]="nissanLeafCarousel"
+                />
+                <p><strong>Leaf</strong></p>
+              </a>
+            </div>
 
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Sentra">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Sentra"
-                                [src]="nissanSentraCarousel" />
-                                <p><strong>Sentra</strong></p>
-                            </a>
-                        </div>
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Sentra">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Sentra"
+                  [src]="nissanSentraCarousel"
+                />
+                <p><strong>Sentra</strong></p>
+              </a>
+            </div>
 
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Versa">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Versa"
-                                [src]="nissanVersaCarousel" />
-                                <p><strong>Versa</strong></p>
-                            </a>
-                        </div>
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Versa">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Versa"
+                  [src]="nissanVersaCarousel"
+                />
+                <p><strong>Versa</strong></p>
+              </a>
+            </div>
 
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Altima">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Altima"
-                                [src]="nissanAltimaCarousel" />
-                                <p><strong>Altima</strong></p>
-                            </a>
-                        </div>
-                        <!-- <div class="col-xs-6">
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Altima">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Altima"
+                  [src]="nissanAltimaCarousel"
+                />
+                <p><strong>Altima</strong></p>
+              </a>
+            </div>
+            <!-- <div class="col-xs-6">
                   <a href="/newvehicles?model=Maxima">
                     <img
                       class="lazyload vehicle-img img-responsive center-block"
@@ -269,14 +336,17 @@
                     <p><strong>Maxima</strong></p>
                   </a>
                 </div> -->
-                        <div class="col-xs-6 col-xs-offset-3 col-sm-6">
-                            <a href="/newvehicles?model=Z">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Z"
-                                [src]="nissanZCarousel" />
-                                <p><strong>Z</strong></p>
-                            </a>
-                        </div>
-                        <!-- <div class="col-xs-6">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-6">
+              <a href="/newvehicles?model=Z">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Z"
+                  [src]="nissanZCarousel"
+                />
+                <p><strong>Z</strong></p>
+              </a>
+            </div>
+            <!-- <div class="col-xs-6">
                   <a href="/newvehicles?model=GTR">
                     <img
                       class="lazyload vehicle-img img-responsive center-block"
@@ -286,25 +356,28 @@
                     <p><strong>GTR</strong></p>
                   </a>
                 </div> -->
-                    </div>
-                </div>
+          </div>
+        </div>
 
-                <!-- TRUCKS DESKTOP & MOBILE CONTENT -->
-                <div role="tabpanel" class="tab-pane fade" id="trucks-tab">
-                    <div class="col-xs-6 col-sm-3 col-sm-offset-3">
-                        <a href="/newvehicles?model=Frontier">
-                            <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Frontier"
-                            [src]="nissanFrontierCarousel" />
-                            <p><strong>Frontier</strong></p>
-                        </a>
-                    </div>
-                </div>
+        <!-- TRUCKS DESKTOP & MOBILE CONTENT -->
+        <div role="tabpanel" class="tab-pane fade" id="trucks-tab">
+          <div class="col-xs-6 col-sm-3 col-sm-offset-3">
+            <a href="/newvehicles?model=Frontier">
+              <img
+                class="lazyload vehicle-img img-responsive center-block"
+                alt="Nissan Frontier"
+                [src]="nissanFrontierCarousel"
+              />
+              <p><strong>Frontier</strong></p>
+            </a>
+          </div>
+        </div>
 
-                <!-- CROSSOVERS & SUVS DESKTOP CONTENT -->
-                <div role="tabpanel" class="tab-pane fade" id="suvs-tab">
-                    <div class="carousel slide hidden-xs" id="theCarousel1">
-                        <div class="carousel-inner">
-                            <!-- <div class="item active">
+        <!-- CROSSOVERS & SUVS DESKTOP CONTENT -->
+        <div role="tabpanel" class="tab-pane fade" id="suvs-tab">
+          <div class="carousel slide hidden-xs" id="theCarousel1">
+            <div class="carousel-inner">
+              <!-- <div class="item active">
                     <div class="col-sm-3">
                       <a href="/newvehicles?model=Rogue%20Sport">
                         <img
@@ -317,78 +390,101 @@
                     </div>
                   </div> -->
 
-                            <div class="item active">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Kicks">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Kicks"
-                                        [src]="nissanKicksCarousel" />
-                                        <p><strong>Kicks</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item active">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Kicks">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Kicks"
+                      [src]="nissanKicksCarousel"
+                    />
+                    <p><strong>Kicks</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Murano">
-                                        <img class="lazyload vehicle-img img-responsive center-block"
-                                            alt="Nissan Murano"
-                                            [src]="nissanMuranoCarousel" />
-                                        <p><strong>Murano</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Murano">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Murano"
+                      [src]="nissanMuranoCarousel"
+                    />
+                    <p><strong>Murano</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Armada">
-                                        <img class="lazyload vehicle-img img-responsive center-block"
-                                            alt="Nissan Armada"
-                                            [src]="nissanArmadaCarousel" />
-                                        <p><strong>Armada</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Armada">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Armada"
+                      [src]="nissanArmadaCarousel"
+                    />
+                    <p><strong>Armada</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Rogue">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Rogue"
-                                        [src]="nissanRogueCarousel" />
-                                        <p><strong>Rogue</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Rogue">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Rogue"
+                      [src]="nissanRogueCarousel"
+                    />
+                    <p><strong>Rogue</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Ariya">
-                                        <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Ariya"
-                                        [src]="nissanAriyaCarousel" />
-                                        <p><strong>Ariya</strong></p>
-                                    </a>
-                                </div>
-                            </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Ariya">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Ariya"
+                      [src]="nissanAriyaCarousel"
+                    />
+                    <p><strong>Ariya</strong></p>
+                  </a>
+                </div>
+              </div>
 
-                            <div class="item">
-                                <div class="col-sm-3">
-                                    <a href="/newvehicles?model=Pathfinder">
-                                        <img class="lazyload vehicle-img img-responsive center-block"
-                                            alt="Nissan Pathfinder"
-                                            [src]="nissanPathfinderCarousel" />
-                                        <p><strong>Pathfinder</strong></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#theCarousel1" data-slide="prev"><i
-                                class="glyphicon glyphicon-chevron-left"></i></a>
-                        <a class="right carousel-control" href="#theCarousel1" data-slide="next"><i
-                                class="glyphicon glyphicon-chevron-right"></i></a>
-                    </div>
+              <div class="item">
+                <div class="col-sm-3">
+                  <a href="/newvehicles?model=Pathfinder">
+                    <img
+                      class="lazyload vehicle-img img-responsive center-block"
+                      alt="Nissan Pathfinder"
+                      [src]="nissanPathfinderCarousel"
+                    />
+                    <p><strong>Pathfinder</strong></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="left carousel-control"
+              href="#theCarousel1"
+              data-slide="prev"
+              ><i class="glyphicon glyphicon-chevron-left"></i
+            ></a>
+            <a
+              class="right carousel-control"
+              href="#theCarousel1"
+              data-slide="next"
+              ><i class="glyphicon glyphicon-chevron-right"></i
+            ></a>
+          </div>
 
-                    <!-- CROSSOVERS & SUVS MOBILE CONTENT -->
-                    <div class="mobile-row visible-xs">
-                        <!-- <div class="col-xs-6">
+          <!-- CROSSOVERS & SUVS MOBILE CONTENT -->
+          <div class="mobile-row visible-xs">
+            <!-- <div class="col-xs-6">
                   <a href="/newvehicles?model=Rogue%20Sport">
                     <img
                       class="lazyload vehicle-img img-responsive center-block"
@@ -399,102 +495,132 @@
                   </a>
                 </div> -->
 
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Kicks">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Kicks"
-                                [src]="nissanKicksCarousel" />
-                                <p><strong>Kicks</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Murano">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Murano"
-                                [src]="nissanMuranoCarousel" />
-                                <p><strong>Murano</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Armada">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Armada"
-                                [src]="nissanArmadaCarousel" />
-                                <p><strong>Armada</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Rogue">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Rogue"
-                                [src]="nissanRogueCarousel" />
-                                <p><strong>Rogue</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Ariya">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Ariya"
-                                [src]="nissanAriyaCarousel" />
-                                <p><strong>Ariya</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Pathfinder">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Pathfinder"
-                                [src]="nissanPathfinderCarousel" />
-                                <p><strong>Pathfinder</strong></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- EV DESKTOP CONTENT -->
-                <div role="tabpanel" class="tab-pane fade" id="ev-tab">
-                    <div class="desktop-row hidden-xs">
-                        <div class="col-sm-3 col-sm-offset-3">
-                            <a href="/newvehicles?model=Ariya">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Ariya"
-                                [src]="nissanAriyaCarousel" />
-                                <p><strong>Ariya</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <a href="/newvehicles?model=Leaf">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Leaf"
-                                [src]="nissanLeafCarousel" />
-                                <p><strong>Leaf</strong></p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- EV CAROUSEL -->
-
-                    <!-- EV MOBILE CONTENT -->
-                    <div class="mobile-row visible-xs">
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Ariya">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Ariya"
-                                [src]="nissanAriyaCarousel" />
-                                <p><strong>Ariya</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="col-xs-6">
-                            <a href="/newvehicles?model=Leaf">
-                                <img class="lazyload vehicle-img img-responsive center-block" alt="Nissan Leaf"
-                                [src]="nissanLeafCarousel" />
-                                <p><strong>Leaf</strong></p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Kicks">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Kicks"
+                  [src]="nissanKicksCarousel"
+                />
+                <p><strong>Kicks</strong></p>
+              </a>
             </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Murano">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Murano"
+                  [src]="nissanMuranoCarousel"
+                />
+                <p><strong>Murano</strong></p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Armada">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Armada"
+                  [src]="nissanArmadaCarousel"
+                />
+                <p><strong>Armada</strong></p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Rogue">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Rogue"
+                  [src]="nissanRogueCarousel"
+                />
+                <p><strong>Rogue</strong></p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Ariya">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Ariya"
+                  [src]="nissanAriyaCarousel"
+                />
+                <p><strong>Ariya</strong></p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Pathfinder">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Pathfinder"
+                  [src]="nissanPathfinderCarousel"
+                />
+                <p><strong>Pathfinder</strong></p>
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- EV DESKTOP CONTENT -->
+        <div role="tabpanel" class="tab-pane fade" id="ev-tab">
+          <div class="desktop-row hidden-xs">
+            <div class="col-sm-3 col-sm-offset-3">
+              <a href="/newvehicles?model=Ariya">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Ariya"
+                  [src]="nissanAriyaCarousel"
+                />
+                <p><strong>Ariya</strong></p>
+              </a>
+            </div>
+
+            <div class="col-sm-3">
+              <a href="/newvehicles?model=Leaf">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Leaf"
+                  [src]="nissanLeafCarousel"
+                />
+                <p><strong>Leaf</strong></p>
+              </a>
+            </div>
+          </div>
+          <!-- EV CAROUSEL -->
+
+          <!-- EV MOBILE CONTENT -->
+          <div class="mobile-row visible-xs">
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Ariya">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Ariya"
+                  [src]="nissanAriyaCarousel"
+                />
+                <p><strong>Ariya</strong></p>
+              </a>
+            </div>
+
+            <div class="col-xs-6">
+              <a href="/newvehicles?model=Leaf">
+                <img
+                  class="lazyload vehicle-img img-responsive center-block"
+                  alt="Nissan Leaf"
+                  [src]="nissanLeafCarousel"
+                />
+                <p><strong>Leaf</strong></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="footer">
-  Find us at 123 Big Chungus Blvd. | 📞 Call: 1-800-CHUNGUS © 2025 Big Chungus
-  Trucks. All rights reserved.
+  Find us at 123 {{ DEALER_NAME }} Blvd. | 📞 Call: 1-800-CHUNGUS © 2025
+  {{ DEALER_NAME }}. All rights reserved.
 </div>
