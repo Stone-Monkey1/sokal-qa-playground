@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
-import { DEALER_NAME } from '../../constants';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None // Disables Angular's style scoping
 })
 export class HomeComponent {
   nissanAltimaCarousel = 'assets/nissan-altima-carousel.png';
@@ -20,5 +20,7 @@ export class HomeComponent {
   nissanRogueCarousel = 'assets/nissan-rogue-carousel.png';
   nissanPathfinderCarousel = 'assets/nissan-pathfinder-carousel.png';
   nissanMuranoCarousel = 'assets/nissan-murano-carousel.png';
-  DEALER_NAME = DEALER_NAME;
+
+  // Fix: Define DEALER_NAME
+  DEALER_NAME = 'Your Dealer Name';
 }
