@@ -5,8 +5,8 @@
   position: relative;
   z-index: 0;
 }
-.interaction-bar-component .scroll-item[data-item-name="Search"] {
-  display: none;
+.interaction-bar-component .scroll-item--default[data-item-name="Search"] {
+  display: none !important;
 }
 
 .interaction-bar-component {
