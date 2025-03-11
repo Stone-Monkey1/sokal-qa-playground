@@ -1,4 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { HomeInteractionBarComponent } from "./home-interaction-bar/home-interaction-bar.component";
+import { HomeQuickLinksComponent } from './home-quick-links/home-quick-links.component';
+import { HomeVehicleCarouselComponent } from './home-vehicle-carousel/home-vehicle-carousel.component';
 
 @Component({
   selector: 'app-home',
@@ -6,21 +9,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   encapsulation: ViewEncapsulation.None // Disables Angular's style scoping
+  ,
+  imports: [HomeInteractionBarComponent, HomeQuickLinksComponent, HomeVehicleCarouselComponent]
 })
 export class HomeComponent {
-  nissanAltimaCarousel = 'assets/nissan-altima-carousel.png';
-  nissanLeafCarousel = 'assets/nissan-leaf-carousel.png';
-  nissanSentraCarousel = 'assets/nissan-sentra-carousel.png';
-  nissanVersaCarousel = 'assets/nissan-versa-carousel.png';
-  nissanAriyaCarousel = 'assets/nissan-ariya-carousel.png';
-  nissanZCarousel = 'assets/nissan-z-carousel.png';
-  nissanArmadaCarousel = 'assets/nissan-armada-carousel.png';
-  nissanFrontierCarousel = 'assets/nissan-frontier-carousel.png';
-  nissanKicksCarousel = 'assets/nissan-kicks-carousel.png';
-  nissanRogueCarousel = 'assets/nissan-rogue-carousel.png';
-  nissanPathfinderCarousel = 'assets/nissan-pathfinder-carousel.png';
-  nissanMuranoCarousel = 'assets/nissan-murano-carousel.png';
-
   // Fix: Define DEALER_NAME
   DEALER_NAME = 'Your Dealer Name';
 }

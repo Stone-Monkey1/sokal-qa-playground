@@ -1,0 +1,222 @@
+/* Interaction bar styling STARTS */
+
+.interaction-bar-component {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.interaction-bar-component .scroll-item[data-item-name="Search"] {
+  display: none;
+}
+
+.interaction-bar-component {
+  --pc: #c3002f;
+  --pc-dark: #000000;
+  --pcd: #000000;
+  --scroll-overlay-gradient-rgba-min: rgba(255, 255, 255, 0);
+  --scroll-overlay-gradient-rgba-max: rgba(255, 255, 255, 1);
+}
+
+.horizontal-scroll-component .scroll-parent {
+  position: relative;
+}
+
+.horizontal-scroll-component {
+  --scroll-overlay-gradient-rgba-min: rgba(255, 255, 255, 0);
+  --scroll-overlay-gradient-rgba-max: rgba(255, 255, 255, 1);
+  --overlay-color-min: var(
+    --scroll-overlay-gradient-rgba-min,
+    rgba(255, 255, 255, 0)
+  );
+  --overlay-color-max: var(
+    --scroll-overlay-gradient-rgba-max,
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.interaction-bar-component
+  .scroll-parent[data-has-scrollbar="false"]
+  .scroll-horizontal {
+  justify-content: center;
+}
+
+.horizontal-scroll-component
+  .scroll-parent[data-has-scrollbar="false"]
+  .scroll-horizontal {
+  text-align: center;
+}
+
+.interaction-bar-component .interaction-bar .scroll-horizontal {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.horizontal-scroll-component .scroll-horizontal {
+  position: relative;
+  background-color: #ffffff;
+  overflow-x: scroll;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-component .scroll-horizontal > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+}
+
+.interaction-bar-component .ibar-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.4vw;
+  color: #000000;
+  color: #000000;
+  text-shadow: 0 0 #000000;
+  text-shadow: 0 0 var(--pcd, #000000);
+  font-size: 12px;
+  -webkit-transition: all 0.1sease;
+  -moz-transition: all 0.1s ease;
+  transition: all 0.1sease;
+}
+
+.interaction-bar-component .ibar-btn__icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.interaction-bar-component .ibar-btn__icon svg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  fill: #000000;
+  fill: var(--pc, #000000);
+}
+
+.interaction-bar-component .ibar-btn__label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.horizontal-scroll-component .scroll-nav-btn {
+  font-size: inherit;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  background-color: transparent;
+  border: solid 2px transparent;
+  border-radius: 100%;
+  -webkit-transition: all 0.3sease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3sease;
+  background-image: url(https://d2v1gjawtegg5z.cloudfront.net/uploads/files/001/348/798/original/arrow-right-black-43b6b23ed61b72.png?1741615049);
+  background-size: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.horizontal-scroll-component .scroll-nav--left .scroll-nav-btn {
+  transform: rotateY(180deg);
+}
+
+.horizontal-scroll-component .scroll-nav--left {
+  left: 0;
+  align-items: flex-start;
+  padding-left: 1%;
+}
+
+.horizontal-scroll-component .scroll-nav--right {
+  right: 0;
+  align-items: flex-end;
+  padding-right: 1%;
+}
+
+.horizontal-scroll-component .scroll-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-scroll-component .scroll-overlay,
+.horizontal-scroll-component .scroll-nav {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: all 0.1sease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1sease;
+}
+
+.horizontal-scroll-component .scroll-overlay--left {
+  left: -1%;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    #fff 100%
+  );
+  background: linear-gradient(
+    to left,
+    var(--overlay-color-min) 0%,
+    var(--overlay-color-min) 5%,
+    var(--overlay-color-max, #fff) 100%
+  );
+}
+
+.horizontal-scroll-component .scroll-overlay--right {
+  right: -1%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 5%,
+    #fff 100%
+  );
+  background: linear-gradient(
+    to right,
+    var(--overlay-color-min) 0%,
+    var(--overlay-color-min) 5%,
+    var(--overlay-color-max, #fff) 100%
+  );
+}
+
+.interaction-bar-component .scroll-horizontal {
+  justify-content: center;
+}
+
+.interaction-bar-component .ibar-btn__icon .cls-1 {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+.interaction-bar-component .ibar-btn__icon .cls-1,
+.interaction-bar-component .ibar-btn__icon .cls-2,
+.interaction-bar-component .ibar-btn__icon .cls-3 {
+  stroke: #000000;
+  stroke: var(--pc, #000000);
+}
+
+.interaction-bar-component .ibar-btn__icon .cls-3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
