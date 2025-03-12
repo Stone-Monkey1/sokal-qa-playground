@@ -1,0 +1,499 @@
+<section data-brand-uses-dark-color-for-primary="true" data-has-color-fill="false" data-theme="nissan"
+    data-website-brands="Nissan" id="tabbedSearchFilterComponent" role="region" class="">
+    <div class="tabbed-search-filter" id="tabbedSearchFilter">
+        <div class="flex-row-center tabbed-filter-trigger"><button class="btn tabbed-filter-btn"
+                data-target="#tabbedSearchFilter" data-trigger="open" type="button">Shop Vehicles <span
+                    class="filter-icon"></span></button></div>
+        <div aria-labelledby="tabbedFilterModalLabel" class="modal fade" data-backdrop="static" id="tabbedFilterModal"
+            role="dialog" tabindex="-1"></div>
+        <div class="tabbed-filter-content"><button class="close tabbed-filter-btn" data-target="#tabbedSearchFilter"
+                data-trigger="close" type="button">×</button>
+            <div class="container-fluid">
+                <div class="filter-ui">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="" data-tab="#tabShopAllInventory" role="presentation"><a
+                                aria-controls="tabShopAllInventory" data-toggle="tab" href="#tabShopAllInventory"
+                                role="tab" aria-expanded="false">Shop All Inventory</a></li>
+                        <li data-tab="#tabShopByPayment" role="presentation" class="active"><a
+                                aria-controls="tabShopByPayment" data-toggle="tab" href="#tabShopByPayment" role="tab"
+                                aria-expanded="true">Shop By Payment</a></li>
+                        <li data-tab="#tabShopByModel" role="presentation"><a aria-controls="tabShopByModel"
+                                data-toggle="tab" href="#tabShopByModel" role="tab">Shop Nissan Models</a></li>
+                        <li data-tab="#tabShopByMake" role="presentation"><a aria-controls="tabShopByMake"
+                                data-toggle="tab" href="#tabShopByMake" role="tab">Shop All Makes</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="component-tab-pane tab-pane" id="tabShopAllInventory" role="tabpanel">
+                            <div class="mobile-tab-pane-title"><a aria-controls="collapseFacetedSearchFilter"
+                                    aria-expanded="true" class="collapse-tab-pane-content" data-toggle="collapse"
+                                    href="#collapseFacetedSearchFilter" role="button"> Shop All Inventory <span
+                                        class="collapse-indicator"><span
+                                            class="indicator-piece indicator-line indicator-line--top"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--top"></span><span
+                                            class="indicator-piece indicator-line indicator-line--bottom"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--bottom"></span></span></a>
+                            </div>
+                            <div class="tab-pane-content collapse in" id="collapseFacetedSearchFilter"
+                                aria-expanded="true" style="">
+                                <div class="component vehicle-search-form-arbitrary" data-default-new-brand="nissan"
+                                    data-type-defaults-to-new="true" id="shopByFacetedSearch"
+                                    data-select-appearance="none"><input class="certification" name="certification"
+                                        type="hidden" value=""><input class="is_new" name="new" type="hidden"
+                                        value="true"><input name="used_preowned_label" type="hidden" value="Used">
+                                    <div class="search-dropdown search-dropdown-type"><label class="visuallyhidden"
+                                            for="dropdown-vehicle-type">Select vehicle type:</label><select
+                                            aria-labelledby="dropdown-search-title"
+                                            class="dropdown-vehicle-type form-control filter-item-input vehicle-search vehicle-search-inv-type-arbitrary"
+                                            data-arbitrary-filter-type="type" data-type="select" name="type"
+                                            data-results="222">
+                                            <option value="default">ANY TYPE</option>
+                                            <option value="true">NEW</option>
+                                            <option value="certified">CERTIFIED</option>
+                                            <option value="false">USED</option>
+                                        </select><i class="material-icons">keyboard_arrow_down</i></div>
+                                    <div class="search-dropdown search-dropdown-year"><label class="visuallyhidden"
+                                            for="dropdown-vehicle-year">Select vehicle year:</label><select
+                                            aria-labelledby="dropdown-search-title"
+                                            class="dropdown-vehicle-year form-control filter-item-input vehicle-search vehicle-search-year-arbitrary"
+                                            data-arbitrary-filter-type="year" data-type="select" name="year"
+                                            data-results="222">
+                                            <option value="default">ANY YEAR</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                        </select><i class="material-icons">keyboard_arrow_down</i></div>
+                                    <div class="search-dropdown search-dropdown-make"><label class="visuallyhidden"
+                                            for="dropdown-vehicle-make">Select vehicle make:</label><select
+                                            aria-labelledby="dropdown-search-title"
+                                            class="dropdown-vehicle-make form-control filter-item-input vehicle-search vehicle-search-make-arbitrary"
+                                            data-arbitrary-filter-type="make" data-type="select" name="make"
+                                            data-results="222">
+                                            <option value="default">ANY MAKE</option>
+                                            <option value="nissan">NISSAN</option>
+                                        </select><i class="material-icons">keyboard_arrow_down</i></div>
+                                    <div class="search-dropdown search-dropdown-model"><label class="visuallyhidden"
+                                            for="dropdown-vehicle-model">Select vehicle model:</label><select
+                                            aria-labelledby="dropdown-search-title"
+                                            class="dropdown-vehicle-model form-control filter-item-input vehicle-search vehicle-search-model-arbitrary"
+                                            data-arbitrary-filter-type="model" data-type="select" name="model"
+                                            data-results="222">
+                                            <option value="default">ANY MODEL</option>
+                                            <option value="altima">ALTIMA</option>
+                                            <option value="ariya">ARIYA</option>
+                                            <option value="armada">ARMADA</option>
+                                            <option value="frontier">FRONTIER</option>
+                                            <option value="kicks">KICKS</option>
+                                            <option value="leaf">LEAF</option>
+                                            <option value="murano">MURANO</option>
+                                            <option value="pathfinder">PATHFINDER</option>
+                                            <option value="rogue">ROGUE</option>
+                                            <option value="sentra">SENTRA</option>
+                                            <option value="versa">VERSA</option>
+                                            <option value="z">Z</option>
+                                        </select><i class="material-icons">keyboard_arrow_down</i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-tab-pane tab-pane active" id="tabShopByPayment" role="tabpanel">
+                            <div class="mobile-tab-pane-title"><a aria-controls="collapsePaymentFilter"
+                                    aria-expanded="true" class="collapse-tab-pane-content" data-toggle="collapse"
+                                    href="#collapsePaymentFilter" role="button"> Shop By Payment <span
+                                        class="collapse-indicator"><span
+                                            class="indicator-piece indicator-line indicator-line--top"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--top"></span><span
+                                            class="indicator-piece indicator-line indicator-line--bottom"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--bottom"></span></span></a>
+                            </div>
+                            <div class="tab-pane-content collapse in" id="collapsePaymentFilter" aria-expanded="true">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active" role="presentation"><a aria-controls="monthlyPaymentFilter"
+                                            data-toggle="tab" href="#monthlyPaymentFilter" role="tab"
+                                            aria-expanded="true">Monthly Budget <span data-placement="top"
+                                                data-toggle="tooltip" title=""
+                                                data-original-title="Projections are based on 'Excellent' credit. Terms: 7.09% APR for 72 months.">*</span></a>
+                                    </li>
+                                    <li role="presentation"><a aria-controls="totalPriceFilter" data-toggle="tab"
+                                            href="#totalPriceFilter" role="tab" aria-expanded="true">Total Price</a>
+                                    </li>
+                                </ul>
+                                <div class="component shop-by-payment" id="shopByPayment">
+                                    <div class="tab-content">
+                                        <div class="tab-pane sub-component-tab-pane active" id="monthlyPaymentFilter"
+                                            role="tabpanel">
+                                            <div class="tabbed-filter-slider"><span
+                                                    class="irs irs--round js-irs-0"><span class="irs"><span
+                                                            class="irs-line" tabindex="0"></span><span class="irs-min"
+                                                            style="visibility: visible;">$199</span><span
+                                                            class="irs-max"
+                                                            style="visibility: visible;">$1,500</span><span
+                                                            class="irs-from" style="visibility: hidden;">0</span><span
+                                                            class="irs-to" style="visibility: hidden;">0</span><span
+                                                            class="irs-single"
+                                                            style="left: 19.9523%;">$499</span></span><span
+                                                        class="irs-grid"></span><span class="irs-bar irs-bar--single"
+                                                        style="left: 0px; width: 24.3523%;"></span><span
+                                                        class="irs-shadow shadow-single"
+                                                        style="display: none;"></span><span class="irs-handle single"
+                                                        style="left: 21.9523%;"><i></i><i></i><i></i></span></span><input
+                                                    class="js-range-slider filter-item-input irs-hidden-input has-results"
+                                                    data-from="499" data-max="1500" data-min="199" data-prefix="$"
+                                                    data-prettify-separator="," data-skin="round" data-step="10"
+                                                    id="monthlyPaymentSlider" name="max_payment" type="text" value=""
+                                                    tabindex="-1" readonly="" data-results="137"></div>
+                                        </div>
+                                        <div class="tab-pane sub-component-tab-pane" id="totalPriceFilter"
+                                            role="tabpanel">
+                                            <div class="tabbed-filter-slider"><span
+                                                    class="irs irs--round js-irs-1"><span class="irs"><span
+                                                            class="irs-line" tabindex="0"></span><span
+                                                            class="irs-min">$10,000</span><span
+                                                            class="irs-max">$90,000</span><span class="irs-from"
+                                                            style="visibility: hidden;">0</span><span class="irs-to"
+                                                            style="visibility: hidden;">0</span><span
+                                                            class="irs-single">0</span></span><span
+                                                        class="irs-grid"></span><span
+                                                        class="irs-bar irs-bar--single"></span><span
+                                                        class="irs-shadow shadow-single"></span><span
+                                                        class="irs-handle single"><i></i><i></i><i></i></span></span><input
+                                                    class="js-range-slider filter-item-input irs-hidden-input has-results"
+                                                    data-from="45000" data-max="90000" data-min="10000" data-prefix="$"
+                                                    data-prettify-separator="," data-skin="round" data-step="1000"
+                                                    id="totalPriceSlider" name="price" type="text" value=""
+                                                    tabindex="-1" readonly="" data-results="292"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-tab-pane tab-pane" id="tabShopByModel" role="tabpanel">
+                            <div class="mobile-tab-pane-title"><a aria-controls="collapseModelFilter"
+                                    aria-expanded="true" class="collapse-tab-pane-content" data-toggle="collapse"
+                                    href="#collapseModelFilter" role="button"> Shop Nissan Models<span
+                                        class="collapse-indicator"><span
+                                            class="indicator-piece indicator-line indicator-line--top"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--top"></span><span
+                                            class="indicator-piece indicator-line indicator-line--bottom"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--bottom"></span></span></a>
+                            </div>
+                            <div class="tab-pane-content collapse in" id="collapseModelFilter" aria-expanded="true"
+                                style="">
+                                <div class="component shop-by-model scroll-parent" data-has-scrollbar="false"
+                                    id="shopByModel" data-scroll-region="min">
+                                    <div class="scroll-horizontal scrollbar-hidden"><label class="filter-item"
+                                            data-make="nissan" data-model="altima"><input class="filter-item-input"
+                                                type="checkbox" name="model" value="Altima" data-make="nissan"
+                                                data-model="altima" data-matched-vehicles-executed="true"><span
+                                                class="filter-item__img" data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/655/770/original/33741.jpg?1675319597);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Altima</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="ariya"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Ariya"
+                                                data-make="nissan" data-model="ariya"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/457/281/326/original/44712.jpg?1711952991);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Ariya</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="armada"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Armada"
+                                                data-make="nissan" data-model="armada"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/655/844/original/33899.jpg?1675319618);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Armada</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="frontier"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Frontier"
+                                                data-make="nissan" data-model="frontier"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/655/984/original/33807.jpg?1675319676);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Frontier</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="kicks"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Kicks"
+                                                data-make="nissan" data-model="kicks"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/653/182/original/36966.jpg?1675231569);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Kicks</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="leaf"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Leaf"
+                                                data-make="nissan" data-model="leaf"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/653/381/original/36091.jpg?1675231746);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Leaf</span></label><label class="filter-item"
+                                            data-make="nissan" data-model="murano"><input class="filter-item-input"
+                                                type="checkbox" name="model" value="Murano" data-make="nissan"
+                                                data-model="murano" data-matched-vehicles-executed="true"><span
+                                                class="filter-item__img" data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/654/271/original/36081.jpg?1675232288);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Murano</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="pathfinder"><input
+                                                class="filter-item-input" type="checkbox" name="model"
+                                                value="Pathfinder" data-make="nissan" data-model="pathfinder"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/655/834/original/36089.jpg?1675233233);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Pathfinder</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="rogue"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Rogue"
+                                                data-make="nissan" data-model="rogue"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/657/046/original/35606.jpg?1675233790);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Rogue</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="rogue sport"><input
+                                                class="filter-item-input" type="checkbox" name="model"
+                                                value="Rogue Sport" data-make="nissan" data-model="rogue sport"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/656/199/original/34323.jpg?1675319765);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle" aria-hidden="true"></i>Rogue
+                                                Sport</span></label><label class="filter-item" data-make="nissan"
+                                            data-model="sentra"><input class="filter-item-input" type="checkbox"
+                                                name="model" value="Sentra" data-make="nissan" data-model="sentra"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/656/359/original/33482.jpg?1675319844);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Sentra</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="versa"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Versa"
+                                                data-make="nissan" data-model="versa"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/656/747/original/33863.jpg?1675320239);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Versa</span></label><label
+                                            class="filter-item" data-make="nissan" data-model="z"><input
+                                                class="filter-item-input" type="checkbox" name="model" value="Z"
+                                                data-make="nissan" data-model="z"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                data-has-fallback-bg="false"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/photos/images/390/653/102/original/35609.jpg?1675231471);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle" aria-hidden="true"></i>Z</span></label>
+                                    </div>
+                                    <div class="scroll-overlay scroll-overlay--left"></div>
+                                    <div class="scroll-overlay scroll-overlay--right"></div>
+                                    <div class="scroll-nav scroll-nav--left"><button class="scroll-nav-btn"
+                                            data-direction="left" data-scroll-parent="#shopByModel" tabindex="0"
+                                            type="button"></button></div>
+                                    <div class="scroll-nav scroll-nav--right"><button class="scroll-nav-btn"
+                                            data-direction="right" data-scroll-parent="#shopByModel" tabindex="0"
+                                            type="button"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="component-tab-pane tab-pane" id="tabShopByMake" role="tabpanel">
+                            <div class="mobile-tab-pane-title"><a aria-controls="collapseMakesFilter"
+                                    aria-expanded="true" class="collapse-tab-pane-content" data-toggle="collapse"
+                                    href="#collapseMakesFilter" role="button"> Shop All Makes <span
+                                        class="collapse-indicator"><span
+                                            class="indicator-piece indicator-line indicator-line--top"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--top"></span><span
+                                            class="indicator-piece indicator-line indicator-line--bottom"></span><span
+                                            class="indicator-piece indicator-circle indicator-circle--bottom"></span></span></a>
+                            </div>
+                            <div class="tab-pane-content collapse in" id="collapseMakesFilter" aria-expanded="true"
+                                style="">
+                                <div class="component shop-by-make scroll-parent" data-has-scrollbar="false"
+                                    id="shopByMake" data-scroll-region="min">
+                                    <div class="scroll-horizontal scrollbar-hidden"><label class="filter-item"
+                                            data-make="nissan"><input class="filter-item-input" type="checkbox"
+                                                name="make" value="Nissan" data-make="nissan"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-nissan, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-nissan, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Nissan</span></label><label
+                                            class="filter-item" data-make="chevrolet"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Chevrolet" data-make="chevrolet"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-chevrolet, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-chevrolet, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Chevrolet</span></label><label
+                                            class="filter-item" data-make="chrysler"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Chrysler" data-make="chrysler"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-chrysler, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-chrysler, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Chrysler</span></label><label
+                                            class="filter-item" data-make="dodge"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Dodge" data-make="dodge"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-dodge, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-dodge, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Dodge</span></label><label
+                                            class="filter-item" data-make="ford"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Ford" data-make="ford"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-ford, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-ford, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Ford</span></label><label class="filter-item"
+                                            data-make="gmc"><input class="filter-item-input" type="checkbox" name="make"
+                                                value="GMC" data-make="gmc" data-matched-vehicles-executed="true"><span
+                                                class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-gmc, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-gmc, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>GMC</span></label><label class="filter-item"
+                                            data-make="honda"><input class="filter-item-input" type="checkbox"
+                                                name="make" value="Honda" data-make="honda"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-honda, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-honda, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Honda</span></label><label
+                                            class="filter-item" data-make="hyundai"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Hyundai" data-make="hyundai"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-hyundai, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-hyundai, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Hyundai</span></label><label
+                                            class="filter-item" data-make="jeep"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Jeep" data-make="jeep"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-jeep, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-jeep, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Jeep</span></label><label class="filter-item"
+                                            data-make="kia"><input class="filter-item-input" type="checkbox" name="make"
+                                                value="Kia" data-make="kia" data-matched-vehicles-executed="true"><span
+                                                class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-kia, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-kia, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Kia</span></label><label class="filter-item"
+                                            data-make="mazda"><input class="filter-item-input" type="checkbox"
+                                                name="make" value="Mazda" data-make="mazda"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-mazda, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-mazda, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Mazda</span></label><label
+                                            class="filter-item" data-make="mitsubishi"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Mitsubishi" data-make="mitsubishi"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-mitsubishi, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-mitsubishi, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Mitsubishi</span></label><label
+                                            class="filter-item" data-make="ram"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Ram" data-make="ram"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-ram, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-ram, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Ram</span></label><label class="filter-item"
+                                            data-make="subaru"><input class="filter-item-input" type="checkbox"
+                                                name="make" value="Subaru" data-make="subaru"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-subaru, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-subaru, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Subaru</span></label><label
+                                            class="filter-item" data-make="tesla"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Tesla" data-make="tesla"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-tesla, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-tesla, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Tesla</span></label><label
+                                            class="filter-item" data-make="toyota"><input class="filter-item-input"
+                                                type="checkbox" name="make" value="Toyota" data-make="toyota"
+                                                data-matched-vehicles-executed="true"><span class="filter-item__img"
+                                                style="background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/model-fallback-bg-texture-sm-1b94a052dd685e32c31391a9a4ee67cc323c2d8fb07668fe4a81b14fc27cde5f.jpg); background-color: var(--sokal-pc-toyota, #000000);"></span><span
+                                                class="filter-item__title"
+                                                style="background-color: var(--sokal-pc-toyota, #000000);"><i
+                                                    class="fa fa-check-circle"
+                                                    aria-hidden="true"></i>Toyota</span></label></div>
+                                    <div class="scroll-overlay scroll-overlay--left"></div>
+                                    <div class="scroll-overlay scroll-overlay--right"></div>
+                                    <div class="scroll-nav scroll-nav--left"><button class="scroll-nav-btn"
+                                            data-direction="left" data-scroll-parent="#shopByMake" tabindex="0"
+                                            type="button"></button></div>
+                                    <div class="scroll-nav scroll-nav--right"><button class="scroll-nav-btn"
+                                            data-direction="right" data-scroll-parent="#shopByMake" tabindex="0"
+                                            type="button"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results-tab-pane tab-pane" id="tabShopByResults" role="tabpanel"><a
+                                class="btn btn-default btn-branded shop-by-results-btn"
+                                href="/vehicles?filter=new-true.make-nissan" data-results-count="137"><span
+                                    class="results-btn-txt">View Results </span><span class="loader-wrapper"><span
+                                        class="loader"></span></span><span class="results-preview">(<span
+                                        class="results-count">137</span>)</span></a><input
+                                class="dropdown-search-results" data-component="#tabShopAllInventory"
+                                name="dropdown_search_results" readonly="" type="hidden" value="222"><input
+                                class="max-payment-results" data-component="#monthlyPaymentFilter"
+                                name="max_payment_results" readonly="" type="hidden" value="137"><input
+                                class="max-price-results" data-component="#totalPriceFilter" name="price_results"
+                                readonly="" type="hidden" value="292"><input class="model-results"
+                                data-component="#tabShopByModel" name="model_results" readonly="" type="hidden"
+                                value="0"><input class="make-results" data-component="#tabShopByMake"
+                                name="make_results" readonly="" type="hidden" value="0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--Ion Range Slider CDNs-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+        rel="stylesheet">
+    <script async="async"
+        src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</section>

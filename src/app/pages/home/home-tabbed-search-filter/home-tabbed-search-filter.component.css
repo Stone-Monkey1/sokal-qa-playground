@@ -1,0 +1,301 @@
+#tabbedSearchFilterComponent {
+    --pc: var(--sokal-pc-nissan, #000000);
+    --pc-dark: var(--sokal-pcd-nissan, #000000);
+    --btn-br: var(--sokal-btn-br-nissan, 50px);
+}
+
+#tabbedSearchFilterComponent {
+    padding-top: 12px;
+    max-width: 1512px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .tabbed-filter-trigger {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: -2147483647;
+}
+
+#tabbedSearchFilterComponent .flex-row-center {
+    align-items: center;
+    justify-content: center;
+}
+
+#tabbedSearchFilterComponent .flex-row-start, #tabbedSearchFilterComponent .flex-row-center, #tabbedSearchFilterComponent .flex-row-center-start, #tabbedSearchFilterComponent .flex-row-center-between {
+    display: flex;
+    flex-direction: row;
+}
+
+#tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .tabbed-search-filter:not(.search-filter--mobile) .filter-ui > .tab-content.display-results #tabShopByResults, #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .tabbed-filter-btn[data-trigger="open"], #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .tabbed-filter-btn[data-trigger="open"]:hover, #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .tabbed-filter-btn[data-trigger="open"]:active, #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .tabbed-filter-btn[data-trigger="open"]:focus, #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .search-filter--mobile .btn-branded, #tabbedSearchFilterComponent[data-brand-uses-dark-color-for-primary="true"] .component-tab-pane.active .collapse-indicator {
+    background-color: #000000;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .filter-ui > .tab-content.display-results #tabShopByResults, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"], #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:hover, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:active, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:focus, #tabbedSearchFilterComponent .search-filter--mobile .btn-branded, #tabbedSearchFilterComponent .component-tab-pane.active .collapse-indicator {
+    background-color: #000000;
+    background-color: #c3002f;
+}
+
+#tabbedSearchFilterComponent .tab-pane, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"], #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:hover, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:active, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"]:focus {
+    border-color: #000000;
+    border-color: var(--pc-dark, #000000);
+}
+
+#tabbedSearchFilterComponent .btn-branded, #tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"] {
+    border-radius: 50px;
+    border-radius: var(--btn-br, 50px);
+}
+
+#tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"] {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    color: #ffffff;
+    border: solid 2px #000000;
+    padding: 10px 30px 12px 30px;
+    margin: 7px 0;
+    font-size: 22px;
+    -webkit-transition: all 0.3sease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3sease;
+}
+
+#tabbedSearchFilterComponent .tabbed-filter-btn[data-trigger="open"] .filter-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px 0 0 20px;
+    background-image: url(https://d2v1gjawtegg5z.cloudfront.net/assets/filter-slider-white-300x-2661386….png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tabbedSearchFilterComponent #tabbedFilterModal {
+    display: none !important;
+    z-index: 2147483645;
+}
+
+#tabbedSearchFilterComponent .tabbed-filter-content {
+    background: #ffffff;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .tabbed-filter-btn[data-trigger="close"] {
+    display: none;
+}
+
+#tabbedSearchFilterComponent .tabbed-filter-content .tabbed-filter-btn.close {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+#tabbedSearchFilterComponent .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0;
+}
+
+#tabbedSearchFilterComponent .filter-ui > .nav-tabs > li {
+    order: 4;
+}
+
+#tabbedSearchFilterComponent .nav-tabs>li {
+    float: none;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+#tabbedSearchFilterComponent .btn-branded:hover, #tabbedSearchFilterComponent .btn-branded:active, #tabbedSearchFilterComponent .btn-branded:focus, #tabbedSearchFilterComponent .nav-tabs>li>a, #tabbedSearchFilterComponent .nav-tabs>li>a:hover, #tabbedSearchFilterComponent .nav-tabs>li>a:active, #tabbedSearchFilterComponent .nav-tabs>li>a:focus, #tabbedSearchFilterComponent .nav-tabs>li.active>a {
+    color: #000000;
+    color: var(--pc-dark, #000000);
+}
+
+#tabbedSearchFilterComponent .nav-tabs>li>a {
+    margin: 0px 20px;
+    padding: 5px 0px;
+    opacity: 0.2;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+#tabbedSearchFilterComponent a {
+    font-weight: bold;
+}
+
+#tabbedSearchFilterComponent .filter-ui > .nav-tabs > li {
+    order: 4;
+}
+
+#tabbedSearchFilterComponent .nav-tabs>li.active>a {
+    background-color: #ffffff;
+    border: 0;
+    opacity: 1;
+}
+
+#tabbedSearchFilterComponent .filter-ui > .nav-tabs > li[data-tab="#tabShopByModel"] {
+    display: none;
+}
+
+#tabbedSearchFilterComponent .nav-tabs > li:last-child {
+    display: none;
+}
+
+#tabbedSearchFilterComponent .filter-ui > .tab-content {
+    justify-content: flex-start;
+}
+
+#tabbedSearchFilterComponent .tab-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*height: 120px;*/
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#tabbedSearchFilterComponent #tabbedSearchFilter:not(.search-filter--mobile) #tabShopAllInventory, #tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .filter-ui > .tab-content.display-results #tabShopByResults {
+    -webkit-transition: all 0.3sease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3sease;
+}
+
+#tabbedSearchFilterComponent .filter-ui > .tab-content > .tab-pane {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-transition: width 0.2sease;
+    -moz-transition: width 0.2s ease;
+    transition: width 0.2sease;
+}
+
+#tabbedSearchFilterComponent .tab-pane {
+    width: 100%;
+    height: 100%;
+    border: solid 2px #000000;
+    border-radius: 10px;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .mobile-tab-pane-title {
+    display: none;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-tab-pane-content {
+    font-size: 16px;
+    color: #000000;
+    text-shadow: 0 0 #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator {
+    display: inline-block;
+    position: relative;
+    background-color: #c6c6c6;
+    width: 45px;
+    height: 27px;
+    border-radius: 50px;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator .indicator-line--top {
+    top: 33%;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator .indicator-line {
+    width: 60%;
+    height: 1px;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator .indicator-piece {
+    position: absolute;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator .indicator-circle--top {
+    top: 22%;
+    left: 53%;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .collapse-indicator .indicator-circle {
+    width: 17%;
+    height: 28%;
+    border-radius: 50%;
+    background: radial-gradient(#c6c6c6 40%, #ffffff 40%);
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .tab-pane-content, #tabbedSearchFilterComponent .search-filter--mobile .tab-pane-content.collapse.in {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter .tab-pane-content {
+    width: 100%;
+}
+
+#tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .tab-pane .nav-tabs, #tabbedSearchFilterComponent .tabbed-search-filter:not(.search-filter--mobile) .tab-pane .component {
+    display: inline-flex;
+}
+
+#tabbedSearchFilter:not(.search-filter--mobile) #tabShopAllInventory .search-dropdown {
+    margin: 0 5px;
+}
+
+#tabbedSearchFilter #shopByFacetedSearch:not([data-select-appearance="menulist"]) .search-dropdown {
+    padding-right: 15px;
+}
+
+#tabbedSearchFilter #tabShopAllInventory .search-dropdown {
+    border-radius: 6px;
+    border: solid 1px var(--pc-dark);
+    position: relative;
+}
+
+#tabbedSearchFilterComponent #tabShopByPayment .tabbed-filter-slider {
+    width: 100%;
+}
+
+.irs--round .irs-line {
+    top: 36px;
+    height: 4px;
+    background-color: #dee4ec;
+    border-radius: 4px;
+}
+
+#tabbedSearchFilterComponent .irs--round .irs-line, #tabbedSearchFilterComponent .irs--round .irs-bar {
+    height: 1px;
+}
+
+.irs-line {
+    height: 10px;
+    top: 33px;
+    background: #EEE;
+    background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);
+    border: 1px solid #CCC;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+}
+
+.irs-line {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    outline: none !important;
+}
